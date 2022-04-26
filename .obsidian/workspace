@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Lecture 2.md",
+            "file": "Reinforcement Learning/Lecture 2.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7e1d782b381d03c6",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture 2.md",
+                "file": "Reinforcement Learning/Lecture 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +90,7 @@
   },
   "active": "5f294f65f0a65a11",
   "lastOpenFiles": [
+    "Reinforcement Learning/Lecture 2.md",
     "Lecture 2.md",
     "random test review 3110.md",
     "CS229/Lecture 2.md",
