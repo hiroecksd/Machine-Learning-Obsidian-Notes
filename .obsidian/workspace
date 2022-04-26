@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "e783f3b18b348ee5",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f294f65f0a65a11",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Lecture 2.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9ee722027f83078e",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2b2ffb7b07fd611",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e758f5212adc4a54",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8c7ae7ac5f0e0b80",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "7e1d782b381d03c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "27b108e79f65afd0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d575e53d90419ae",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Lecture 2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5f294f65f0a65a11",
+  "lastOpenFiles": [
+    "Lecture 2.md",
+    "random test review 3110.md",
+    "CS229/Lecture 2.md",
+    "CS229/Lecture 3.md",
+    "Lecture 2.md",
+    "Lecture 3.md"
+  ]
+}
