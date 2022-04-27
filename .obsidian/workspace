@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "CS234/Lecture 2.md",
-            "mode": "preview",
+            "mode": "source",
             "source": false
           }
         }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7e1d782b381d03c6",
