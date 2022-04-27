@@ -32,4 +32,11 @@ V\left(s_{1}\right) \\
 \vdots \\
 V\left(s_{N}\right)
 \end{array}\right)
-$$ This probably looks very daunting but we can break it down into pieces and understand it. We are obviously turning our value function into a matrix equation here. At its core we can see that the equation is: $$V = R + \gamma PV $$ If we want a complete analytic solution we will need to do some linear algebra but essentially it comes down to: $$ V = (I - \gamma P)^{-1}R $$ where $I$ is your identity matrix. If you solve directly you will need to take a matrix inverse which is $O(N^{3})$. You should also know that what is inside the parenthesis is invertible. 
+$$ This probably looks very daunting but we can break it down into pieces and understand it. We are obviously turning our value function into a matrix equation here. At its core we can see that the equation is: $$V = R + \gamma PV $$ If we want a complete analytic solution we will need to do some linear algebra but essentially it comes down to: $$ V = (I - \gamma P)^{-1}R $$ where $I$ is your identity matrix. If you solve directly you will need to take a matrix inverse which is $O(N^{3})$. You should also know that what is inside the parenthesis is invertible. So how can we look at this from a dynamic programming approach? **Dynamic Programming** is a technique that helps to efficiently solve a class of problems that have overlapping subproblems and optimal substructure property. Your pseudo-code for this would be something like this
+```
+v = 0
+for k = 1 until convergence
+	for all s in S
+		v(s)
+```
+which is basically our $V(s)$ but in programming terms. The big $O$ for this would be $O(|S|^{2})$ for each iteration where $(|S| = N)$.  
