@@ -8,3 +8,5 @@ What is a horizon? A horizon is the number of time steps in each episodes in a p
 The **state value function** is the expected return from starting in state $s$ which is following the policy $\pi$. Our value function is denoted by $V(s)$ and given by the following: $$V(s) = \mathbb{E}[G_{t}|s_{t} = s] = \mathbb{B}[r_{t} + \gamma r_{t + 1} + \gamma^{2}  r_{t + 2} + \cdots + \gamma^{H - 1}r_{t + H - 1}| s_{t} = s]$$
 ## Discount Factor
 We use a discount factor because it is mathematically convenient as it avoids infinite returns and values. If episodes lengths are always finite you should know that you can use $\gamma = 1$. 
+## How to compute a MRP
+We have been learning how to understand the mathematics of an MRP but how is it computed? We need our MRP value function to satisfy the following: $$V(s) = \underbrace{R(s)}_{\text{Immediate Reward}} + \underbrace{\gamma \sum_{s' \in S} P(s' | s) V(s')}_{\text{Discounted sum of future rewards.}}$$
