@@ -9,4 +9,27 @@ The **state value function** is the expected return from starting in state $s$ w
 ## Discount Factor
 We use a discount factor because it is mathematically convenient as it avoids infinite returns and values. If episodes lengths are always finite you should know that you can use $\gamma = 1$. 
 ## How to compute a MRP
-We have been learning how to understand the mathematics of an MRP but how is it computed? We need our MRP value function to satisfy the following: $$V(s) = \underbrace{R(s)}_{\text{Immediate Reward}} + \underbrace{\gamma \sum_{s' \in S} P(s' | s) V(s')}_{\text{Discounted sum of future rewards.}}$$
+We have been learning how to understand the mathematics of an MRP but how is it computed? We need our MRP value function to satisfy the following: $$V(s) = \underbrace{R(s)}_{\text{Immediate Reward}} + \underbrace{\gamma \sum_{s' \in S} P(s' | s) V(s')}_{\text{Discounted sum of future rewards.}}$$ 
+### Bellman Equation
+The Bellman equation is a necessary condition for optimality associated with mathematical optimization method. It writes the value of decision problem at a certain point in time in terms of the payoff from some initial choices and the value of the remaining decision problem that results from those initial choices. This point of this is that **it breaks a dynamic optimization problem into a sequence of simpler subproblems**. 
+## Bellman for MRP
+Now that we have a general understanding of what the Bellman equation is we can apply it to MRP for our use: $$
+\left(\begin{array}{c}
+V\left(s_{1}\right) \\
+\vdots \\
+V\left(s_{N}\right)
+\end{array}\right)=\left(\begin{array}{c}
+R\left(s_{1}\right) \\
+\vdots \\
+R\left(s_{N}\right)
+\end{array}\right)+\gamma\left(\begin{array}{ccc}
+P\left(s_{1} \mid s_{1}\right) & \cdots & P\left(s_{N} \mid s_{1}\right) \\
+P\left(s_{1} \mid s_{2}\right) & \cdots & P\left(s_{N} \mid s_{2}\right) \\
+\vdots & \ddots & \vdots \\
+P\left(s_{1} \mid s_{N}\right) & \cdots & P\left(s_{N} \mid s_{N}\right)
+\end{array}\right)\left(\begin{array}{c}
+V\left(s_{1}\right) \\
+\vdots \\
+V\left(s_{N}\right)
+\end{array}\right)
+$$ This probably looks very daunting but we can break it down into pieces and understand it. We are obviously turning our value function into a matrix equation here. At its core we can see that the equation is: $$V = R + \gamma PV $$ If we want a complete analytic solution we will need to do some linear algebra but essentially it comes down to: $$ V = (I - \gamma P)^{-1}R $$ where $I$ is your identity matrix. If you solve directly you will need to take a matrix inverse which is $O(N^{3})$. You should also know that what is inside the parenthesis is invertible. 
