@@ -7,3 +7,4 @@ It is the explore-exploit dilemma. What applications does it have?
 # Gaussian vs. Bernoulli
 Bernoulli is good for measuring success rates while Gaussian is better for continuous variables. 
 # Epsilon-Greedy
+
