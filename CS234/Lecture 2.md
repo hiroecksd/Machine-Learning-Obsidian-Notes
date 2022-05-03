@@ -40,3 +40,5 @@ for k = 1 until convergence
 		v(s)
 ```
 which is basically our $V(s)$ but in programming terms. The big $O$ for this would be $O(|S|^{2})$ for each iteration where $(|S| = N)$.  
+# Markov Decision Process (MDP)
+What is an MDP? Well it is an MRP but with actions. 
