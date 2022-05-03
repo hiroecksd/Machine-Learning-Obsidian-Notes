@@ -11,3 +11,5 @@ $$E(X) = \sum_{x} xp(x)$$ Continuous: $$E(X) = \int xp(x) dx$$
 Continuous: $$ E(X | Y) = \int xp(x|y)dx$$
 Discrete: $$E(X | Y) = \sum_{x} xp(x | y)$$
 ## Expected value of a function
+Discrete: $$E[g(x)] = \sum_{x}g(x)p(x) $$
+Continuous: $$E[g(X)] = \int g(x)p(x)dx$$
