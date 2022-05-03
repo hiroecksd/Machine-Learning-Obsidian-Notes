@@ -1,4 +1,5 @@
 {
   "cssTheme": "Dracula Official",
-  "interfaceFontFamily": "Times New Roman"
+  "interfaceFontFamily": "",
+  "baseFontSize": 18
 }
