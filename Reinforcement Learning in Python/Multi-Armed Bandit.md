@@ -7,4 +7,23 @@ It is the explore-exploit dilemma. What applications does it have?
 # Gaussian vs. Bernoulli
 Bernoulli is good for measuring success rates while Gaussian is better for continuous variables. 
 # Epsilon-Greedy
-Our problem is that we need to balance the explore / exploit ratio. We can
+Our problem is that we need to balance the explore / exploit ratio. If we only take the best maximum likelihood estimate win rate then it won't work.  We could get lucky or not which could exploit something suboptimal. That is called the **greedy**. Means to be short-sighted. Being greedy for us means that we just pick the bandit with the highest MLE win-rate without any regard to confidence in prediction or amount of data collected. **Epsilon-Greedy says that instead of always taking the greedy option, we are gonna have a small probability of doing something random (non-greedy) which is given by $\epsilon$**. Usually some amount like 5-10%.  Here is some pseudocode:
+
+```python
+## Greedy Method
+while True:
+	j = argmax(predicted bandit means)
+	x = play bandit j and get reward
+	bandits[j].update_mean(x)
+
+## Epsidlon - Greedy
+while True:
+	p = random number in [0,1]
+	if p < epsilon
+		j = choose a random bandit
+	else: 
+		j = argmax(predicted bandit means)
+	x = play bandit and get reward
+	bandits[j].update_mean(x)
+```
+The reason we want to explore with a nonzero epsilon is so we can collect data about each bandit being as accurate as possible. When do you have enough data? 
