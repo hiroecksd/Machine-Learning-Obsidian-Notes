@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Reinforcement Learning in Python/Pre-req Knowledge.md",
+            "file": "Reinforcement Learning in Python/Multi-Armed Bandit.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reinforcement Learning in Python/Pre-req Knowledge.md",
+                "file": "Reinforcement Learning in Python/Multi-Armed Bandit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,10 +89,10 @@
   },
   "active": "5f294f65f0a65a11",
   "lastOpenFiles": [
+    "Reinforcement Learning in Python/Multi-Armed Bandit.md",
     "Reinforcement Learning in Python/Pre-req Knowledge.md",
     "CS234/Lecture 2.md",
     "CS234/Lecture 1.md",
-    "Reinforcement Learning in Python/Multi-Armed Bandit.md",
     "CS229/Lecture 2.md",
     "CS229/Lecture 3.md",
     "Pasted image 20220427131510.png",
