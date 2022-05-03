@@ -13,3 +13,10 @@ Discrete: $$E(X | Y) = \sum_{x} xp(x | y)$$
 ## Expected value of a function
 Discrete: $$E[g(x)] = \sum_{x}g(x)p(x) $$
 Continuous: $$E[g(X)] = \int g(x)p(x)dx$$
+## Example
+Given: $$E(cX + Y) = cE(X) + E(Y)$$
+The expected value is actually the true **mean** of $x$. 
+# Monte Carlo Method
+$$E(X) = \frac{1}{N} \sum^{N}_{i = 1} x_{i}$$ where $x_{i} \approx p(x)$. This is also known as the sample mean. 
+# Bayes Rule
+$$p(y|x) = \frac{p(x,y)}{p(x)} = \frac{p(x|y)p(y)}{\int p(x,y)dy} = \frac{p(x|y)p(y)}{\int p(x|y)p(y)dy}$$
