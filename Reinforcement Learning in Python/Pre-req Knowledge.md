@@ -1,3 +1,13 @@
 # Probability Review
-$p(A,B)$ is a joint distribution: 
+$p(A,B)$ is a joint distribution: Given two random variables that are on the same probability space, the joint distribution is the corresponding probability distribution on all possible pairs of outputs.**The probability of two events (variables) happening together**.
 $p(A | B)$ is a condition distribution: What is the probability distribution of $A$ given that we already know $B$. 
+## Example: 
+Given $p(x,y)$ find $p(y)$. the process is called **marginalization** and $p(y)$ is the marginal distribution, discrete: $$p(y) = \sum_{x} p(x,y)$$ Continuous: $$p(y) = \int p(x,y) dx$$
+# Expected Value
+$E(X)$ is the expected value. How do you calculate the expected value? 
+Discrete: 
+$$E(X) = \sum_{x} xp(x)$$ Continuous: $$E(X) = \int xp(x) dx$$
+## Conditional Expectation
+Continuous: $$ E(X | Y) = \int xp(x|y)dx$$
+Discrete: $$E(X | Y) = \sum_{x} xp(x | y)$$
+## Expected value of a function
