@@ -20,3 +20,7 @@ The expected value is actually the true **mean** of $x$.
 $$E(X) = \frac{1}{N} \sum^{N}_{i = 1} x_{i}$$ where $x_{i} \approx p(x)$. This is also known as the sample mean. 
 # Bayes Rule
 $$p(y|x) = \frac{p(x,y)}{p(x)} = \frac{p(x|y)p(y)}{\int p(x,y)dy} = \frac{p(x|y)p(y)}{\int p(x|y)p(y)dy}$$
+# Mean Squared Error
+$$ MSE = \frac{1}{N} \sum_{i = 1}^{N} (y_{i} - \hat{y_{i}})^{2}$$
+# Gradient Descent
+$$ w = w - \alpha \nabla_{w}J, \; J = MSE$$ 
