@@ -26,4 +26,6 @@ while True:
 	x = play bandit and get reward
 	bandits[j].update_mean(x)
 ```
-The reason we want to explore with a nonzero epsilon is so we can collect data about each bandit being as accurate as possible. When do you have enough data? 
+The reason we want to explore with a nonzero epsilon is so we can collect data about each bandit being as accurate as possible. Sometimes we can use a decaying epsilon to help with selecting a bandit arm. They all decrease over time. 
+# Sample Mean Calculation
+$$\bar{X}_{N} = \frac{1}{N} \sum_{i = 1}^{N} X_{i}$$
