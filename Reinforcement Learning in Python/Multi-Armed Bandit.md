@@ -29,3 +29,4 @@ while True:
 The reason we want to explore with a nonzero epsilon is so we can collect data about each bandit being as accurate as possible. Sometimes we can use a decaying epsilon to help with selecting a bandit arm. They all decrease over time. 
 # Sample Mean Calculation
 $$\bar{X}_{N} = \frac{1}{N} \sum_{i = 1}^{N} X_{i}$$
+Calculating the sample mean naively is a bad idea because we need an infinite amount of space and we don't have that. More data we have, the longer it will take. 
